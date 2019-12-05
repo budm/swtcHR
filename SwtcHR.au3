@@ -39,7 +39,8 @@ While 1
     EndIf
 
     If  (@HOUR >= $fromtime) AND (@HOUR < $totime) AND ($task1done = 0) Then
-     If MsgBox(4,'SwtcHR is scheduled to ( start at' & $fromtime & ')',' Can I switch? ',$defaultstart) = 7 Then;No pressed
+	   ;the message box code will be removed completely.
+     If MsgBox(4,'SwtcHR is trying to switch','Can I switch? ',$defaultstart) = 7 Then;No pressed
       If MsgBox(4,'Postpone SwtcHR?','Try agin in 1 hour?') = 7 Then
        $task1done = 1
 		 Else
